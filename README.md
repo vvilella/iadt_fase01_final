@@ -1,4 +1,3 @@
-
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)  
 ![Python](https://img.shields.io/badge/python-3.13.3-blue)  
 ![Status](https://img.shields.io/badge/status-em%20progresso-yellow)
@@ -8,7 +7,6 @@
 ## Previsão de Custos Médicos com Modelos de Regressão
 
 Este projeto é o trabalho final da Fase 01 do curso **IADT**.  
-
 O desafio consistiu em desenvolver um modelo de **regressão preditiva** para estimar os **custos médicos individuais** cobrados por um seguro de saúde, com base em variáveis demográficas e comportamentais.
 
 ---
@@ -18,12 +16,13 @@ O desafio consistiu em desenvolver um modelo de **regressão preditiva** para es
 - Análise exploratória completa (EDA)  
 - Tratamento de dados categóricos com **One-Hot Encoding**  
 - Modelagem utilizando **Regressão Linear**  
+- Teste extra com **Árvore de Decisão Regressora**  
+- Ajuste manual de **hiperparâmetro** (`max_depth`)  
 - Separação dos dados em **treinamento e teste**  
 - Avaliação do modelo com **MSE**, **RMSE** e **R²**  
 - Validação estatística usando **`statsmodels`**  
 - Geração de gráficos e interpretação completa dos resultados  
 - Relatório detalhado em **Markdown** no notebook  
-- Roteiro de vídeo preparado  
 
 ---
 
@@ -50,17 +49,17 @@ O desafio consistiu em desenvolver um modelo de **regressão preditiva** para es
 │   └── utils.py                   # funções auxiliares
 │
 ├── README.md                      # Este arquivo
-├── requirements.txt               # Dependências do projetogit pu
+├── requirements.txt               # Dependências do projeto
 └── .gitignore                     # Arquivos ignorados no Git
 ```
 
 ---
 
-## **Como executar o projeto**
+## ⚙️ **Como executar o projeto**
 
 1. Clone o repositório:  
 ```bash
-git clone https://github.com/vvilella/iadt_fase01_final
+git clone https://github.com/vvilella/iadt_fase01_final.git
 ```
 
 2. Acesse a pasta:  
@@ -91,25 +90,25 @@ jupyter notebook
 
 ## **Resultados**
 
-- **RMSE:** ~ R$ 5.800 → erro médio aceitável para o contexto.  
-- **R²:** ~ 75% → modelo explica bem a variação nos custos médicos.  
-- **Variáveis mais relevantes:** ser **fumante**, **IMC** e **idade**.  
-- **Visualização:** Gráfico de valores **reais vs previstos** mostrando boa aderência.  
-- **Validação estatística:** confirmou a significância das principais variáveis.
+- **Regressão Linear** → R²: ~ 0.78  
+- **Árvore de Decisão (sem ajuste)** → R²: ~ 0.73  
+- **Árvore de Decisão (ajustada, `max_depth=3`)** → R²: ~ 0.85  
+
+O **ajuste de hiperparâmetro** melhorou significativamente a performance!  
 
 ---
 
 ## **Próximos passos (possíveis evoluções)**
 
-- Testar modelos mais **complexos**: Árvores de Decisão, Random Forest, XGBoost.  
-- Ajustar **hiperparâmetros** para melhorar performance.  
-- Aplicar transformações para tratar **outliers** (ex.: log nos encargos).  
+- Explorar outros **hiperparâmetros** (`min_samples_split`, `max_features`, etc).  
+- Testar outros modelos como **Random Forest** ou **XGBoost**.  
+- Automatizar o ajuste com **GridSearchCV**.  
 - Criar uma **API** para expor o modelo como serviço.  
 - Fazer o **deploy** em ambiente real.
 
 ---
 
-## **Autor**
+##  **Autor**
 
 Victor Nardi Vilella  
 Projeto desenvolvido como parte do **Tech Challenge — IADT Fase 01**.
@@ -119,10 +118,15 @@ Projeto desenvolvido como parte do **Tech Challenge — IADT Fase 01**.
 ## **Entrega**
 
 - Notebook completo e comentado.  
-- Roteiro de vídeo preparado.  
+- Teste extra com Árvore de Decisão e análise comparativa.  
+- Ajuste manual de hiperparâmetro com melhoria clara de performance.  
+
 - Vídeo explicativo mostrando:  
   - Análise do problema  
   - Passo a passo da modelagem  
   - Resultados obtidos  
   - Conclusão e próximos passos
 
+---
+
+## **Status: Em progresso - ainda vou terminar o vídeo**
