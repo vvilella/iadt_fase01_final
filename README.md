@@ -43,7 +43,7 @@ O desafio consistiu em desenvolver um modelo de **regressão preditiva** para es
 │   └── iadt_fase01_final.ipynb    # Notebook com o projeto completo
 │
 ├── src/
-│   └── utils.py                   # (opcional) funções auxiliares
+│   └── utils.py                   # funções auxiliares
 │
 ├── README.md                      # Este arquivo
 ├── requirements.txt               # Dependências do projeto
@@ -56,7 +56,7 @@ O desafio consistiu em desenvolver um modelo de **regressão preditiva** para es
 
 1. Clone o repositório:  
 ```bash
-git clone https://github.com/seu-usuario/iadt_fase01_final.git
+git clone https://github.com/vvilella/iadt_fase01_final
 ```
 
 2. Acesse a pasta:  
