@@ -1,3 +1,4 @@
+![CI](https://github.com/vvilella/iadt_fase01_final/actions/workflows/ci.yml/badge.svg)
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)  
 ![Python](https://img.shields.io/badge/python-3.13.3-blue)  
 ![Status](https://img.shields.io/badge/status-em%20progresso-yellow)
