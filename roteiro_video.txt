@@ -1,0 +1,21 @@
+Roteiro — Vídeo Tech Challenge: Previsão de Custos Médicos
+
+Olá, tudo bem? Sou Victor Nardi Vilella e esse é o meu projeto final da Fase 01 — Tech Challenge do curso de IA para Devs. Aqui eu vou mostrar, passo a passo, como construí um modelo de Regressão Linear para prever custos médicos individuais.
+
+O desafio era desenvolver um modelo preditivo, utilizando uma base de dados que inclui informações como: idade, gênero, IMC, número de filhos, se a pessoa é fumante e a região onde mora. A ideia é prever quanto a pessoa pode gastar com seguro saúde.
+
+Comecei carregando o dataset e fazendo uma análise exploratória. Percebi que não havia valores ausentes, o que foi ótimo. As distribuições mostraram alguns outliers, especialmente nos custos médicos e no IMC, o que já era esperado. Por exemplo, alguns pacientes chegam a ter encargos acima de R$ 60 mil.
+
+Depois, transformei as variáveis categóricas usando One-Hot Encoding. Isso é importante porque modelos de regressão só trabalham com números. Usei o drop_first=True para evitar multicolinearidade, ou seja, evitar variáveis redundantes que poderiam prejudicar o modelo.
+
+Em seguida, dividi o dataset: 80% para treino e 20% para teste. Isso garante que a gente consiga avaliar a capacidade do modelo de generalizar para novos dados.
+
+Escolhi começar com um modelo simples: Regressão Linear. É um modelo clássico, fácil de interpretar e ótimo pra criar uma linha de base. Treinei o modelo e, em seguida, fiz as previsões.
+
+Os resultados foram bem satisfatórios: tivemos um RMSE de cerca de R$ 5.800, ou seja, o modelo erra, em média, esse valor pra mais ou pra menos. E um R² de 0.78, indicando que o modelo explica 78% da variação nos custos médicos. Visualmente, no gráfico de valores reais vs previstos, deu pra ver que a maioria das previsões ficou bem próxima dos valores reais.
+
+Também fiz uma validação estatística usando o statsmodels. Isso trouxe informações importantes: confirmou que variáveis como idade, IMC e ser fumante são as que mais influenciam o custo médico. Por exemplo: ser fumante aumenta o custo em mais de R$ 23 mil! Algumas variáveis, como o gênero e a região noroeste, não foram estatisticamente significativas.
+
+No geral, o modelo ficou bem ajustado e consistente. Claro, há espaço pra evoluir: podemos testar modelos mais complexos, fazer ajuste de hiperparâmetros, criar uma API pra disponibilizar o modelo, entre outras coisas. Mas, como primeira entrega, estou bem satisfeito com o resultado.
+
+Foi um ótimo exercício para consolidar o que aprendemos nas aulas: pré-processamento, modelagem, avaliação e validação estatística. Obrigado por acompanhar! Até a próxima!
