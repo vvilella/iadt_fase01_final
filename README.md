@@ -1,4 +1,8 @@
 
+![License](https://img.shields.io/badge/license-MIT-blue.svg)  
+![Python](https://img.shields.io/badge/python-3.13.3-blue)  
+![Status](https://img.shields.io/badge/status-em%20progresso-yellow)
+
 # IADT Fase 01 — Tech Challenge
 
 ## Previsão de Custos Médicos com Modelos de Regressão
@@ -46,7 +50,7 @@ O desafio consistiu em desenvolver um modelo de **regressão preditiva** para es
 │   └── utils.py                   # funções auxiliares
 │
 ├── README.md                      # Este arquivo
-├── requirements.txt               # Dependências do projeto
+├── requirements.txt               # Dependências do projetogit pu
 └── .gitignore                     # Arquivos ignorados no Git
 ```
 
