@@ -2,6 +2,7 @@
 ![Python](https://img.shields.io/badge/python-3.13.3-blue)  
 ![Status](https://img.shields.io/badge/status-em%20progresso-yellow)
 
+
 # IADT Fase 01 — Tech Challenge
 
 ## Previsão de Custos Médicos com Modelos de Regressão
@@ -23,6 +24,8 @@ O desafio consistiu em desenvolver um modelo de **regressão preditiva** para es
 - Validação estatística usando **`statsmodels`**  
 - Geração de gráficos e interpretação completa dos resultados  
 - Relatório detalhado em **Markdown** no notebook  
+- Roteiro de vídeo preparado  
+- Automação de comandos com **Makefile**
 
 ---
 
@@ -45,21 +48,20 @@ O desafio consistiu em desenvolver um modelo de **regressão preditiva** para es
 ├── notebook/
 │   └── iadt_fase01_final.ipynb    # Notebook com o projeto completo
 │
-├── src/
-│   └── utils.py                   # funções auxiliares
-│
 ├── README.md                      # Este arquivo
 ├── requirements.txt               # Dependências do projeto
-└── .gitignore                     # Arquivos ignorados no Git
+├── .gitignore                     # Arquivos ignorados no Git
+├── Makefile                       # Automação de comandos
+└── LICENSE                        # Licença MIT
 ```
 
 ---
 
-## ⚙️ **Como executar o projeto**
+## **Como executar o projeto**
 
 1. Clone o repositório:  
 ```bash
-git clone https://github.com/vvilella/iadt_fase01_final.git
+git clone https://github.com/seu-usuario/iadt_fase01_final.git
 ```
 
 2. Acesse a pasta:  
@@ -67,24 +69,27 @@ git clone https://github.com/vvilella/iadt_fase01_final.git
 cd iadt_fase01_final
 ```
 
-3. (Opcional) Crie um ambiente virtual:  
+3. Utilize o **Makefile** para automatizar as tarefas:  
+
+- Instalar dependências:  
 ```bash
-python -m venv venv
-source venv/bin/activate  # Linux/Mac
-venv\Scripts\activate     # Windows
+make install
 ```
 
-4. Instale as dependências:  
+- Rodar o Jupyter Notebook:  
 ```bash
-pip install -r requirements.txt
+make run
 ```
 
-5. Execute o Jupyter Notebook:  
+- Limpar arquivos desnecessários (`__pycache__`, checkpoints):  
 ```bash
-jupyter notebook
+make clean
 ```
 
-6. Abra o notebook `notebook/iadt_fase01_final.ipynb` e siga o passo a passo.
+- Atualizar o requirements.txt:  
+```bash
+make freeze
+```
 
 ---
 
@@ -108,7 +113,7 @@ O **ajuste de hiperparâmetro** melhorou significativamente a performance!
 
 ---
 
-##  **Autor**
+## **Autor**
 
 Victor Nardi Vilella  
 Projeto desenvolvido como parte do **Tech Challenge — IADT Fase 01**.
@@ -120,7 +125,8 @@ Projeto desenvolvido como parte do **Tech Challenge — IADT Fase 01**.
 - Notebook completo e comentado.  
 - Teste extra com Árvore de Decisão e análise comparativa.  
 - Ajuste manual de hiperparâmetro com melhoria clara de performance.  
-
+- Roteiro de vídeo preparado.  
+- Automação de comandos com **Makefile**.  
 - Vídeo explicativo mostrando:  
   - Análise do problema  
   - Passo a passo da modelagem  
@@ -129,4 +135,4 @@ Projeto desenvolvido como parte do **Tech Challenge — IADT Fase 01**.
 
 ---
 
-## **Status: Em progresso - ainda vou terminar o vídeo**
+## **Status: Em progresso** 
