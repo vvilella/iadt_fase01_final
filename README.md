@@ -8,6 +8,8 @@
 
 ## Previsão de Custos Médicos com Modelos de Regressão
 
+Link para o vídeo: https://youtu.be/4Ru3c-8Qk0s
+
 ---
 
 ## **Autor**
