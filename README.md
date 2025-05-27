@@ -8,6 +8,15 @@
 
 ## Previsão de Custos Médicos com Modelos de Regressão
 
+---
+
+## **Autor**
+
+Victor Nardi Vilella  
+Projeto desenvolvido como parte do **Tech Challenge — IADT Fase 01**.
+
+---
+
 Este projeto é o trabalho final da Fase 01 do curso **IADT**.  
 O desafio consistiu em desenvolver um modelo de **regressão preditiva** para estimar os **custos médicos individuais** cobrados por um seguro de saúde, com base em variáveis demográficas e comportamentais.
 
@@ -25,7 +34,6 @@ O desafio consistiu em desenvolver um modelo de **regressão preditiva** para es
 - Validação estatística usando **`statsmodels`**  
 - Geração de gráficos e interpretação completa dos resultados  
 - Relatório detalhado em **Markdown** no notebook  
-- Roteiro de vídeo preparado  
 - Automação de comandos com **Makefile**
 
 ---
@@ -96,28 +104,19 @@ make freeze
 
 ## **Resultados**
 
-- **Regressão Linear** → R²: ~ 0.78  
-- **Árvore de Decisão (sem ajuste)** → R²: ~ 0.73  
-- **Árvore de Decisão (ajustada, `max_depth=3`)** → R²: ~ 0.85  
+- **Regressão Linear:** R²: 0.78  
+- **Árvore de Decisão (sem ajuste):** → R²: 0.73  
+- **Árvore de Decisão (ajustada, `max_depth=3`):** R²: 0.85  
 
-O **ajuste de hiperparâmetro** melhorou significativamente a performance!  
+**ajuste de hiperparâmetro** melhorou significativamente a performance!  
 
 ---
 
-## **Próximos passos (possíveis evoluções)**
+## **Próximos passos (possíveis evoluções para melhorar o aprendizado)**
 
 - Explorar outros **hiperparâmetros** (`min_samples_split`, `max_features`, etc).  
 - Testar outros modelos como **Random Forest** ou **XGBoost**.  
-- Automatizar o ajuste com **GridSearchCV**.  
 - Criar uma **API** para expor o modelo como serviço.  
-- Fazer o **deploy** em ambiente real.
-
----
-
-## **Autor**
-
-Victor Nardi Vilella  
-Projeto desenvolvido como parte do **Tech Challenge — IADT Fase 01**.
 
 ---
 
@@ -126,7 +125,6 @@ Projeto desenvolvido como parte do **Tech Challenge — IADT Fase 01**.
 - Notebook completo e comentado.  
 - Teste extra com Árvore de Decisão e análise comparativa.  
 - Ajuste manual de hiperparâmetro com melhoria clara de performance.  
-- Roteiro de vídeo preparado.  
 - Automação de comandos com **Makefile**.  
 - Vídeo explicativo mostrando:  
   - Análise do problema  
@@ -135,5 +133,3 @@ Projeto desenvolvido como parte do **Tech Challenge — IADT Fase 01**.
   - Conclusão e próximos passos
 
 ---
-
-## **Status: Em progresso** 
